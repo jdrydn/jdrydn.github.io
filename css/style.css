@@ -1,0 +1,17 @@
+	
+	@import url('bootstrap.min.css');
+	@import url('bootstrap.responsive.min.css');
+	
+	body {
+		padding: 40px 5px 10px 5px;
+	}
+	
+	header {
+		padding-bottom: 30px;
+	}
+	
+	footer {
+		padding-bottom: 20px;
+		padding-top: 40px;
+	}
+	
