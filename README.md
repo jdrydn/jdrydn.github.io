@@ -30,4 +30,4 @@ Jekyll formats the Markdown `.md` files, if they have layout options defined at 
 	layout: default
 	---
 
-If you want to learn more about Jeykll, you can check out the official site or check out this [awesome tutorial on Nettuts](http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/)!
+If you want to learn more about Jeykll, you can check out [the official GitHub repo](//github.com/mojombo/jekyll) or check out this [awesome tutorial on Nettuts](http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/)!
