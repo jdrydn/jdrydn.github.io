@@ -1,4 +1,4 @@
----
+f---
 layout: default
 ---
 
@@ -28,7 +28,7 @@ Over the summer I've been working at [Mindwork Labs](//mindworklabs.com) as thei
 
 I also have a [small portfolio of work](./portfolio), where you can read more about my projects above, plus information on previous projects and work done for others.
 
-Although this site doesn't look like much, it does have an interesting structure behind it which you can [read about on the GitHub repo page for this site](//github.com/jdrydn/jdrydn.github.com).
+This site itself has a fairly **minimal** theme, but the structure behind the site is fairly interesting, which you can [read about on the GitHub repo page for this site](//github.com/jdrydn/jdrydn.github.com#about-this-site).
 
 If you do want to contact me, you can [email me](mailto:james@jdrydn.com) or [tweet me][twitter].
 

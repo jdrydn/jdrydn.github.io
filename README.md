@@ -22,17 +22,23 @@ The repo is a simplified Jekyll website, with a structure similar to this:
 	.git
 		... Boring Git files
 	img
-		... Image files
+		... Image files for the portfolio.
 	.gitignore
 	CNAME
 	index.md
 	portfolio.md
 	README.md
 
-Jekyll formats the Markdown `.md` files, if they have layout options defined at the top of the file:
+Jekyll formats the Markdown `.md` files, if they have layout options defined at the top of the file, and inserts the content into a pre-defined HTML page (defined in `_layouts`).
+
+The layout options look like:
 
 	---
 	layout: default
 	---
 
 If you want to learn more about Jeykll, you can check out [the official GitHub repo](//github.com/mojombo/jekyll) or check out this [awesome tutorial on Nettuts](http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/)!
+
+The design and `CSS` itself is used in [Mou](http://mouapp.com/), a Markdown text editor for OS X. Called **github2**, so it's similar to the styling used on GitHub. I've put the CSS on my code repo, at `http://code.jdrydn.com/css/mou-github2.css` so I can use the styles throughout my GitHub sites.
+
+So yeah. That's my site. All this work into Jekyll has me wondering about building a quick blog environment for hackathons like [Angelhack](http://jdrydn.com/Angelhack2012).
