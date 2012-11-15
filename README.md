@@ -1,3 +1,8 @@
+<!--
+---
+layout: default
+---
+-->
 [Check out the live site here!](http://jdrydn.com)
 
 # About this site
