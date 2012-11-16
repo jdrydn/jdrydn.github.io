@@ -16,7 +16,7 @@ I developed [ThatPixel](//thatpixel.com), a simple social sharing website, for m
 
 In a night I wrote [If I Was CEO](//ifiwasceo.com), a site where users sign in using their Twitter accounts and comment on what they would have done if they were CEOs of leading corporations and companies. I've recently been expanding with Facebook integration.
 
-I've written some frameworks, [exp0](//github.com/jdrydn/exp0) and [leaf](//github.com/jdrydn/leaf). Both of which build upon concepts and ideals that I've used (and like) whilst learning web development.
+I've written some frameworks, [exp0](//github.com/jdrydn/exp0) and [leaf](//jdrydn.com/leaf). Both of which build upon concepts and ideals that I've used (and like) whilst learning web development. I've also written some documentation for Leaf, which you can [read here](//jdrydn.com/leaf).
 
 Currently I'm a developer at [Overheard](//overheard.co), alongside [Chris Ewbank](//djpc.org.uk) and [Rufus Honour](//rufushonour.com). You can read about its development on the [our development blog](//blog.overheard.co).
 
