@@ -20,11 +20,11 @@ I've written some frameworks, [exp0](//github.com/jdrydn/exp0) and [leaf](//jdry
 
 Currently I'm a developer at [Overheard](//overheard.co), alongside [Chris Ewbank](//djpc.org.uk) and [Rufus Honour](//rufushonour.com). You can read about its development on the [our development blog](//blog.overheard.co).
 
-I like to use *Git* & *[Github][github]* to host projects and code where I can, because in my opinion open code is good code (although, if stuff is private I've got a *[Gitlab](//gitlabhq.com)* instance ready to go!). I've also got experience in using *svn*, which I've used for several projects at University & Overheard.
+Over the summer I've been working at [Mindwork Labs](//mindworklabs.com) as their **Code Hero**, on various aspects of [MyDeals](//mydeals.com)!
 
 I write a blog over at [code.withportals.com](//code.withportals.com) in my free time, focusing on coding and technology.
 
-Over the summer I've been working at [Mindwork Labs](//mindworklabs.com) as their **Code Hero**, on various aspects of [MyDeals](//mydeals.com)!
+I like to use *Git* & *[Github][github]* to host projects and code where I can, because in my opinion open code is good code (although, if stuff is private I've got a *[Gitlab](//gitlabhq.com)* instance ready to go!). I've also got experience in using *svn*, which I've used for several projects at University, Overheard and Mindwork Labs.
 
 I also have a [small portfolio of work](./portfolio), where you can read more about my projects above, plus information on previous projects and work done for others.
 
