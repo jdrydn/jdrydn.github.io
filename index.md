@@ -8,7 +8,7 @@ layout: default
 
 *19. Tech geek. Speaking English, HTML, PHP and learning JS. Mac, iPhone & iPad user. Blogger. Developer.*
 
-I am pretty much always online. You can find me [tweeting][twitter], shouting on [App.net](//alpha.app.net/jdrydn), on [facebook](//facebook.com/jdryden), publishing stuff to [GitHub][github], or generally browsing [Forrst](//forrst.me/jdrydn).
+I am pretty much always online. You can find me [tweeting][twitter], shouting on [adn](//alpha.app.net/jdrydn), on [facebook](//facebook.com/jdryden), publishing stuff to [Github][github], or generally browsing [Forrst](//forrst.me/jdrydn).
 
 I am a web developer, with strong background in **PHP** (including frameworks such as *CodeIgniter* & *Kohana*), *HTML* (including *HTML5* and *CSS3*), **JavaScript** (including *jQuery* and *NodeJS*) and **MySQL**.
 
@@ -32,5 +32,5 @@ This site itself has a fairly **minimal** theme, but the structure behind the si
 
 If you do want to contact me, you can [email me](mailto:james@jdrydn.com) or [tweet me][twitter].
 
-[github]:  //github.com.jdrydn
+[github]:  //github.com/jdrydn
 [twitter]: //twitter.com/jdrydn
