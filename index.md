@@ -1,5 +1,6 @@
 ---
 layout: default
+
 ---
 
 # jdrydn.com
@@ -10,7 +11,7 @@ layout: default
 
 I am pretty much always online. You can find me [tweeting][twitter], shouting on [adn](//alpha.app.net/jdrydn), on [facebook](//facebook.com/jdryden), publishing stuff to [Github][github], or generally browsing [Forrst](//forrst.me/jdrydn).
 
-I am a web developer, with strong background in **PHP** (including frameworks such as *CodeIgniter* & *Kohana*), *HTML* (including *HTML5* and *CSS3*), **JavaScript** (including *jQuery* and *NodeJS*) and **MySQL**.
+I am a web developer, with strong background in **PHP** (including *PHP5* and a few frameworks like *CodeIgniter* & *Kohana*), **MySQL**, *HTML* (including *HTML5* and *CSS3*), **JavaScript** (including *jQuery*) **NodeJS** (including *MongoDB* and *ExpressJS*).
 
 I developed [ThatPixel](//thatpixel.com), a simple social sharing website, for my A2 Computing coursework. I am planning to rewrite it one day.
 
