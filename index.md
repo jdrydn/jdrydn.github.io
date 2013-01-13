@@ -11,15 +11,9 @@ I am pretty much always online. You can find me [tweeting][twitter], shouting on
 
 I am a web developer, with strong background in **PHP** (including *PHP5* and a few frameworks like *CodeIgniter* & *Kohana*), **MySQL**, *HTML* (including *HTML5* and *CSS3*), **JavaScript** (including *jQuery*), and I am currently teaching myself **NodeJS** (including *MongoDB* and *ExpressJS*) [over here](//code.withportals.com/2012/11/node).
 
-I developed [ThatPixel](//thatpixel.com), a simple social sharing website, for my A2 Computing coursework. I am planning to rewrite it one day.
-
-In a night I wrote [If I Was CEO](//ifiwasceo.com), a site where users sign in using their Twitter accounts and comment on what they would have done if they were CEOs of leading corporations and companies. I've recently been expanding with Facebook integration.
-
 I've written some frameworks, [exp0](//github.com/jdrydn/exp0) and [leaf](//jdrydn.com/leaf). Both of which build upon concepts and ideals that I've used (and like) whilst learning web development. I've also written some documentation for Leaf, which you can [read here](//jdrydn.com/leaf).
 
-Currently I'm a developer at [Overheard](//overheard.co), alongside [Chris Ewbank](//djpc.org.uk) and [Rufus Honour](//rufushonour.com). You can read about its development on the [our development blog](//blog.overheard.co).
-
-Over the summer I've been working at [Mindwork Labs](//mindworklabs.com) as their **Code Hero**, on various aspects of [MyDeals](//mydeals.com)!
+Over the summer I've been working at [Mindwork Labs](//mindworklabs.com) as their **Code Hero**, working on the social zone of [MyDeals](//mydeals.com)!
 
 I write a blog over at [code.withportals.com](//code.withportals.com) in my free time, focusing on coding and technology.
 
