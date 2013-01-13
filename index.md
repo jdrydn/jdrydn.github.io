@@ -3,8 +3,6 @@ layout: default
 
 ---
 
-# jdrydn.com
-
 **Hello there. I'm James. Or jdrydn. Or jdryden.**
 
 *19. Tech geek. Speaking English, HTML, PHP and learning JS. Mac, iPhone & iPad user. Blogger. Developer.*
