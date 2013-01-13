@@ -3,12 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<link href="//jdrydn.github.com/code/css/mou-github2.css" rel="stylesheet" type="text/css"/>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
 		<title>{% if page.title %} {{ page.title }} &raquo; {% endif %}jdrydn</title>
 	</head>
 	<body>
-		{{ content }}
-		
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span2">
+					<header>
+						<img src="https://graph.facebook.com/jdryden/picture"/>
+					</header>
+				</div>
+				<div class="span10">
+					<section class="content">
+{{ content }}
+					</section>
+					<footer>
+						<p>Built by jdrydn.</p>
+					</footer>
+				</div>
+			</div>
+		</div>
 		<script src="//code.jdrydn.com/js/jquery/jquery.1.7.1.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];

@@ -1,0 +1,44 @@
+	
+	@import url('//code.jdrydn.com/css/bootstrap.min.css');
+	@import url('//code.jdrydn.com/css/bootstrap-responsive.min.css');
+	
+	body {
+		font-size: 14px;
+		line-height: 22px;
+		padding-top: 30px;
+	}
+	
+	header {
+		text-align: center;
+	}
+		
+		header img {
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+		}
+	
+	section.content {
+		padding-top: 20px;
+	}
+		
+		section.content p {
+			margin-bottom: 10px;
+		}
+		
+		footer {
+			padding-top: 30px;
+		}
+			
+			footer p {
+				margin-bottom: 30px;
+			}
+	
+	@media (max-width: 480px) {
+		
+		section.content {
+			padding-top: 30px;
+		}
+		
+	}
+	
