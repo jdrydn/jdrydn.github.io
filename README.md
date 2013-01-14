@@ -39,6 +39,6 @@ The layout options look like:
 
 If you want to learn more about Jeykll, you can check out [the official GitHub repo](//github.com/mojombo/jekyll) or check out this [awesome tutorial on Nettuts](http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/)!
 
-The design and `CSS` itself is used in [Mou](http://mouapp.com/), a Markdown text editor for OS X. Called **github2**, so it's similar to the styling used on GitHub. I've put the CSS on my code repo, at `http://code.jdrydn.com/css/mou-github2.css` so I can use the styles throughout my GitHub sites.
+The design and styling comes from [Twitter's Bootstrap](http://twitter.github.com/bootstrap) framework, because I'm not a designer. I've put a static version of the CSS on my code repo because Twitter keep updating Bootstrap!
 
 So yeah. That's my site. All this work into Jekyll has me wondering about building a quick blog environment for hackathons like [Angelhack](http://jdrydn.com/Angelhack2012).
