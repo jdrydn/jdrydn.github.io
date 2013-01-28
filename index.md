@@ -5,7 +5,7 @@ layout: default
 
 **Hello there. I'm James. Or jdrydn. Or jdryden.**
 
-*19. Tech geek. Speaking English, HTML, PHP and learning JS. Mac, iPhone & iPad user. Blogger. Developer.*
+*20. Tech geek. Speaking English, HTML, PHP and learning JS. Mac, iPhone & iPad user. Blogger. Developer.*
 
 I am pretty much always online. You can find me [tweeting][twitter], shouting on [adn](//alpha.app.net/jdrydn), on [facebook](//facebook.com/jdryden), publishing stuff to [Github][github], or generally browsing [Forrst](//forrst.me/jdrydn).
 
