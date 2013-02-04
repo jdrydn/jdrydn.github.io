@@ -9,7 +9,7 @@ layout: default
 
 I am pretty much always online. You can find me [tweeting][twitter], shouting on [adn](//alpha.app.net/jdrydn), on [facebook](//facebook.com/jdryden), publishing stuff to [Github][github], or generally browsing [Forrst](//forrst.me/jdrydn).
 
-I am a web developer, with strong background in **PHP** (including *PHP5* and a few frameworks like *CodeIgniter* & *Kohana*), **MySQL**, *HTML* (including *HTML5* and *CSS3*), **JavaScript** (including *jQuery*), and I am currently teaching myself **NodeJS** (including *MongoDB* and *ExpressJS*) [over here](//code.withportals.com/2012/11/node).
+I am a web developer, with strong background in **PHP** (including *PHP5* and a few frameworks like *CodeIgniter* & *Kohana*), **MySQL**, **HTML** (including *HTML5* and *CSS3*), **JavaScript** (including *jQuery*), and I am currently teaching myself **NodeJS** (including *MongoDB* and *ExpressJS*) [over here](//code.withportals.com/2012/11/node).
 
 I've written some frameworks, [exp0](//github.com/jdrydn/exp0) and [leaf](//jdrydn.com/leaf). Both of which build upon concepts and ideals that I've used (and like) whilst learning web development. I've also written some documentation for Leaf, which you can [read here](//jdrydn.com/leaf).
 
