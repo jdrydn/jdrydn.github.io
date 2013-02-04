@@ -3,6 +3,7 @@
 	@import url('//code.jdrydn.com/css/bootstrap-responsive.min.css');
 	
 	body {
+		font-family: Georgia, serif;
 		font-size: 14px;
 		line-height: 22px;
 		padding-top: 30px;

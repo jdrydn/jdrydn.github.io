@@ -3,7 +3,7 @@ layout: default
 
 ---
 
-**Hello there. I'm James. Or jdrydn. Or jdryden.**
+**James Dryden**
 
 *20. Tech geek. Speaking English, HTML, PHP and learning JS. Mac, iPhone & iPad user. Blogger. Developer.*
 
