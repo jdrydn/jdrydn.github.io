@@ -7,7 +7,7 @@ layout: default
 
 *20. Tech geek. Speaking English, HTML, PHP and learning JS. Mac, iPhone & iPad user. Blogger. Developer.*
 
-I am pretty much always online. You can find me [tweeting][twitter], shouting on [adn](//alpha.app.net/jdrydn), on [facebook](//facebook.com/jdryden), publishing stuff to [Github][github], or generally browsing [Forrst](//forrst.me/jdrydn).
+I am pretty much always online. You can find me [tweeting][twitter], shouting on [adn](//alpha.app.net/jdrydn), on [facebook](//facebook.com/jdrydn), publishing stuff to [Github][github], or generally browsing [Forrst](//forrst.me/jdrydn).
 
 I am a web developer, with strong background in **PHP** (including *PHP5* and a few frameworks like *CodeIgniter* & *Kohana*), **MySQL**, **HTML** (including *HTML5* and *CSS3*), **JavaScript** (including *jQuery*), and I am currently teaching myself **NodeJS** (including *MongoDB* and *ExpressJS*) [over here](//code.withportals.com/2012/11/node).
 
