@@ -15,7 +15,7 @@ I've written some frameworks, [exp0](//github.com/jdrydn/exp0) and [leaf](//jdry
 
 Over the summer I've been working at [Mindwork Labs](//mindworklabs.com) as their **Code Hero**, working on the social zone of [MyDeals](//mydeals.com)!
 
-I write a blog over at [code.withportals.com](//code.withportals.com) in my free time, focusing on coding and technology.
+I write a blog over at [codewithportals.com](//codewithportals.com) in my free time, focusing on coding and technology.
 
 I like to use *Git* & *[Github][github]* to host projects and code where I can, because in my opinion open code is good code (although, if stuff is private I've got a *[Gitlab](//gitlabhq.com)* instance ready to go!). I've also got experience in using *svn*, which I've used for several projects at University, Overheard and Mindwork Labs.
 
