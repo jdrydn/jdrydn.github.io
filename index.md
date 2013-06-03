@@ -15,7 +15,7 @@ I've written some frameworks, [exp0](//github.com/jdrydn/exp0) and [leaf](//jdry
 
 Over the summer I've been working at [Mindwork Labs](//mindworklabs.com) as their **Code Hero**, working on the social zone of [MyDeals](//mydeals.com)!
 
-I write a blog over at [codewithportals.com](//codewithportals.com) in my free time, focusing on coding and technology.
+I write a blog over at [codewithportals.com](//codewithportals.com) in my free time, focusing on coding and technology. However recently I've been writing articles on [Medium][medium], which has been an excellent experience and I really enjoy writing using their minimal online writer.
 
 I like to use *Git* & *[Github][github]* to host projects and code where I can, because in my opinion open code is good code (although, if stuff is private I've got a *[Gitlab](//gitlabhq.com)* instance ready to go!). I've also got experience in using *svn*, which I've used for several projects at University, Overheard and Mindwork Labs.
 
@@ -26,4 +26,5 @@ This site itself has a fairly **minimal** theme, but the structure behind the si
 If you do want to contact me, you can [email me](mailto:james@jdrydn.com) or [tweet me][twitter].
 
 [github]:  //github.com/jdrydn
+[medium]: //medium.com/@jdrydn
 [twitter]: //twitter.com/jdrydn
