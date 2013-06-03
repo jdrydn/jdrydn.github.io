@@ -7,9 +7,9 @@ layout: default
 
 # About this site
 
-This website itself is hosted on [Github](//github.com) at [jdrydn/jdrydn.github.com](//github.com/jdrydn/jdrydn.github.com) with the domain name `jdrydn.com` set to forward to GitHub's servers.
+This website itself is hosted on [Github](//github.com) at [jdrydn/jdrydn.github.io](//github.com/jdrydn/jdrydn.github.io) with the domain name `jdrydn.com` set to forward to GitHub's servers.
 
-By making a repo named `{username}.github.com` (so in my case `jdrydn.github.com`) I can make a [GitHub pages](//help.github.com/categories/20/articles) site to display content and information.
+By making a repo named `{username}.github.io` (so in my case `jdrydn.github.io`) I can make a [GitHub pages](//help.github.com/categories/20/articles) site to display content and information.
 
 A simple `CNAME` file in the root of the repo, so Github can match the domain to the repo:
 
@@ -39,6 +39,6 @@ The layout options look like:
 
 If you want to learn more about Jeykll, you can check out [the official GitHub repo](//github.com/mojombo/jekyll) or check out this [awesome tutorial on Nettuts](http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/)!
 
-The design and styling comes from [Twitter's Bootstrap](http://twitter.github.com/bootstrap) framework, because I'm not a designer. I've put a static version of the CSS on my code repo because Twitter keep updating Bootstrap!
+The design and styling comes from [Twitter's Bootstrap](http://twitter.github.io/bootstrap) framework, because I'm not a designer. I've put a static version of the CSS on my code repo because Twitter keep updating Bootstrap!
 
-So yeah. That's my site. All this work into Jekyll has me wondering about building a quick blog environment for hackathons like [Angelhack](http://jdrydn.com/Angelhack2012).
+So yeah. That's my site. All this work into Jekyll has me wondering about building a quick blog environment for hackathons like [Angelhack](http://github.com/jdrydn/Angelhack2012).
