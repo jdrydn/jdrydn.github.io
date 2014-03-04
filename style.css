@@ -1,6 +1,7 @@
 	
 	@import url('//code.jdrydn.com/css/bootstrap.min.css');
 	@import url('//code.jdrydn.com/css/bootstrap-responsive.min.css');
+	@import url('pygments.css');
 	
 	body {
 		font-family: Georgia, serif;
