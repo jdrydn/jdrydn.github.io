@@ -12,7 +12,7 @@ I am a web developer, working in **NodeJS** & **PHP**, usually powered by a **My
 
 I've also written some PHP frameworks, which you can read about over here. All of which build upon concepts and ideals that I've used in the past (and like) whilst learning web development. If you're interested by them have a read [over here](./php-frameworks.html).
 
-Taking a year in industry placement as part of my degree, I am currently working as a web developer at [Markco Media][markcomedia], and absolutely loving it! I have a list of previous work too, which you can [read about here](./previous-work.html).
+Taking a year in industry placement as part of my degree, I am currently working as a web developer at [Monitise Content][markcomedia], and absolutely loving it! I have a list of previous work too, which you can [read about here](./previous-work.html).
 
 I write a blog over at [codewithportals.com](//codewithportals.com) in my free time, focusing on coding and technology. However recently I've been writing articles on [Medium][medium], which has been an excellent experience and I really enjoy writing using their minimal online writer.
 
@@ -25,6 +25,6 @@ This site itself has a fairly **minimal** theme, but the structure behind the si
 If you do want to contact me, you can [email me](mailto:james@jdrydn.com) or [tweet me][twitter].
 
 [github]:  //github.com/jdrydn
-[markcomedia]: //markcomedia.com
+[markcomedia]: http://markcomedia.com
 [medium]: //medium.com/@jdrydn
 [twitter]: //twitter.com/jdrydn

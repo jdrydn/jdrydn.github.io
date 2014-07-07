@@ -23,11 +23,21 @@ Mindwork Labs has since been "absorbed" by Markco Media, and the team has been i
 
 Admittedly, I am rather sad that Mindwork Labs is no more. It was extremely challenging, equally rewarding, and great fun. I have a lot of "*if I could do it again I would...*" thoughts, but ultimately I am reflecting and building upon what I learnt at Mindworks and going forwards I am very excited to be part of Markco Media's future!
 
+## Markco Media
+
+After [Mindwork Labs][mindworklabs] was acquired by [Markco Media][markcomedia] in 2014, I was integrated along with the other Mindwork Labs developers into the Markco Media tech team, and began working on their products as well as continuing to maintain our existing projects.
+
+I've worked on a couple of Markco's existing products, including [MyVoucherCodes][myvouchercodes] and various international sites, and started a new product for Markco Media which will be released later on this year. My main role involved shaping the data for this API as well as writing the outbound API for various services to interact with. I've really enjoyed working on this project and I cannot wait for it to be released, mostly because we'll be able to implement more fantastic features into this rather brilliant system!
+
+Markco Media was acquired by [Monitise][monitise] at the end of June 2014 and since then we've been working in the same team as [Monitise Content][markcomedia], where we will no doubtedly be providing content to the vast array of services that Monitise produce.
+
 [ben]: http://harcourtprogramming.co.uk
 [bobby]: http://bobbyjason.me
 [markcomedia]: http://markcomedia.com
 [mike]: http://someurl.net
 [mindworklabs]: http://mindworklabs.com
+[monitise]: http://www.monitise.com
 [mydeals]: http://mydeals.com
+[myvouchercodes]: http://www.myvouchercodes.co.uk
 [ross]: http://rosstanner.net
 [tom]: http://tpacker.com
