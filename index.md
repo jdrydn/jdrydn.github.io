@@ -16,11 +16,11 @@ I am studying at the [University Of Kent][kent], working towards a degree in [Co
 
 I write a blog over at [codewithportals.com](//codewithportals.com) in my free time, focusing on coding and technology. However recently I've been writing articles on [Medium][medium], which has been an excellent experience and I really enjoy writing using their minimal online writer.
 
-I like to use *Git*, *[Github][github]* & *[Bitbucket][bitbucket]* to host projects and code where I can, because in my opinion open code is good code. I've also got experience in using *svn*, which I've used for several projects at University, Overheard and Mindwork Labs.
+I like to use *Git*, *[Github][github]* & *[Bitbucket][bitbucket]* to host projects and code where I can, because in my opinion open code is good code. I've also got experience using *SVN*, which I've used for several projects at University, Overheard and Mindwork Labs.
 
 I also have a [small portfolio of work](./portfolio.html), where you can read more about my projects above, plus information on previous projects and work done for others.
 
-This site itself has a fairly **minimal** theme, but the structure behind the site is fairly interesting, which you can [read about on the GitHub page for this site](//github.com/jdrydn/jdrydn.github.io#about-this-site).
+This site itself has a fairly **minimal** theme, but the structure behind the site is fairly interesting, which you can [read about on the GitHub repo for this site](//github.com/jdrydn/jdrydn.github.io#about-this-site).
 
 If you do want to contact me, you can [email me](mailto:james@jdrydn.com) or [tweet me][twitter].
 
