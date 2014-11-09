@@ -1,4 +1,0 @@
-[submodule "dotfiles"]
-	path = dotfiles
-	url = github.com:jdrydn/dotfiles
-	branch = gh-pages
