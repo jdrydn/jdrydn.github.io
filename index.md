@@ -4,7 +4,7 @@ layout: default
 
 **James Dryden**
 
-*21. Tech geek. Mac, iPad & iPhone user. Blogger. Developer. Student.*
+*22. Tech geek. Mac, iPad & iPhone user. Blogger. Developer. Student.*
 
 I am pretty much always online. You can find me [tweeting][twitter], on [facebook](//facebook.com/jdrydn), and often publishing stuff to [Github][github] and [Bitbucket][bitbucket]. Oh, and there is [LinkedIn][linkedin] too!
 
