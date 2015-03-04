@@ -39,5 +39,5 @@ Markco Media was acquired by [Monitise][monitise] at the end of June 2014 and si
 [monitise]: http://www.monitise.com
 [mydeals]: http://mydeals.com
 [myvouchercodes]: http://www.myvouchercodes.co.uk
-[ross]: http://rosstanner.net
+[ross]: https://twitter.com/rossytzoltan
 [tom]: http://tpacker.com
