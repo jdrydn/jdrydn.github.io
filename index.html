@@ -1,0 +1,119 @@
+---
+# Nothing m9
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jdrydn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+
+  <link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+  <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+
+  <script src="/js/functions.js" type="text/javascript"></script>
+  <script src="/js/script.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1><img class="img-circle img-fluid img-inline" src="/favicon.ico"/> James</h1>
+        </div>
+        <div class="col-sm-12">
+          <p><em>"If I have to do something more than once, I'm writing a script for it."</em></p>
+          <p>
+            <strong>NodeJS developer</strong>, often found working on greenfield projects and/or microservices
+            (<em>ExpressJS</em>), familiar with <strong>relational databases</strong> (<em>MySQL, Postgres</em>),
+            <strong>document-driven databases</strong> (<em>MongoDB, RethinkDB, Elasticsearch</em>),
+            <strong>templating</strong> (<em>Nunjucks, Handlebars, Jekyll</em>)
+            <strong>unit testing with code-coverage</strong> (<em>Mocha,Istanbul</em>),
+            <strong>logging infrastructures</strong> (<em>Fluentd, Kibana</em>), as well as
+            <strong>dev-ops roles</strong> working with <strong>dedicated servers</strong> and <strong>Amazon Web Services</strong>.
+          </p>
+          <p>
+            Also experienced in <strong>Bash</strong>, <strong>Git</strong>, <strong>HTML-CSS</strong>,
+            <strong>Python</strong> and <strong>PHP</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="row social-icons">
+        <div class="col-sm-12">
+          <ul class="list-inline">
+            {% for link in site.data.social-icons %}{% if link.headline %}
+            <li class="list-inline-item">
+              <a href="{{ link.url }}" title="{{ link.title }}">
+                <i class="fa fa-{{ link.icon }} fa-2x" aria-hidden="true"></i>
+              </a>
+            </li>
+            {% endif %}{% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="card-deck-wrapper">
+        <div class="card-deck">
+          {% for project in site.data.cards.projects %}
+          {% assign mod = forloop.index | modulo:2 %}
+          <div class="card">
+            <div class="card-block">
+              <h2 class="card-title">
+                {% if project.logo %}
+                <img class="img-fluid img-inline" src="/img/{{ site.data.cards.logos[project.logo] }}"/>
+                {% elsif project.icon %}
+                <i class="fa fa-{{ project.icon }}" aria-hidden="true"></i>
+                {% endif %}
+                {{ project.title }}
+              </h2>
+              <p class="card-text">{{ project.summary | markdownify | smartify }}</p>
+              {% for url in project.urls %}
+              <a class="card-link" href="{{ url.url }}"{% if url.title %} title="{{ url.title }}"{% endif %}>{{ url.text | default: url.url }}</a>
+              {% endfor %}
+              <p class="card-text"><small class="text-muted">{{ project.dates }}</small></p>
+            </div>
+          </div>
+          {% if mod == 0 %}
+        </div>
+        <div class="card-deck">
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <hr/>
+
+      <div class="row">
+        <div class="col-xs-12 text-xs-center social-icons">
+          <ul class="list-inline">
+            {% for link in site.data.social-icons %}
+            <li class="list-inline-item">
+              <a href="{{ link.url }}" title="{{ link.title }}">
+                <i class="fa fa-{{ link.icon }} fa-2x" aria-hidden="true"></i>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-xs-12 text-xs-center">
+          <a href="http://fontawesome.io/" target="_blank" title="Fonts from FontAwesome">
+            <i class="fa fa-pied-piper fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>
