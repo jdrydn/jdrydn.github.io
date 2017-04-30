@@ -67,6 +67,8 @@
                 <img class="img-fluid img-inline" src="/img/{{ site.data.cards.logos[project.logo] }}"/>
                 {% elsif project.icon %}
                 <i class="fa fa-{{ project.icon }}" aria-hidden="true"></i>
+                {% elsif project.svg %}
+                <div class="img-svg">{% include {{ project.svg }}.svg %}</div>
                 {% endif %}
                 {{ project.title }}
               </h2>

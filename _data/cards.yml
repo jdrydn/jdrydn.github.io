@@ -32,7 +32,7 @@ projects:
       - url: https://github.com/jdrydn/telegram-hero
         text: github.com/jdrydn/telegram-hero
 
-  - logo: carthrottle
+  - svg: carthrottle
     title: Car Throttle
     dates: June 2015 - Present
     summary: >
