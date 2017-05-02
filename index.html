@@ -62,16 +62,7 @@
           {% assign mod = forloop.index | modulo:2 %}
           <div class="card">
             <div class="card-block">
-              <h2 class="card-title">
-                {% if project.logo %}
-                <img class="img-fluid img-inline" src="/img/{{ site.data.cards.logos[project.logo] }}"/>
-                {% elsif project.icon %}
-                <i class="fa fa-{{ project.icon }}" aria-hidden="true"></i>
-                {% elsif project.svg %}
-                <div class="img-svg">{% include {{ project.svg }}.svg %}</div>
-                {% endif %}
-                {{ project.title }}
-              </h2>
+              <h2 class="card-title">{{ project.title }}</h2>
               <p class="card-text">{{ project.summary | markdownify | smartify }}</p>
               {% for url in project.urls %}
               <a class="card-link" href="{{ url.url }}"{% if url.title %} title="{{ url.title }}"{% endif %}>{{ url.text | default: url.url }}</a>
