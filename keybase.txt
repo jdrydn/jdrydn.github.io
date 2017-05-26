@@ -1,0 +1,53 @@
+==================================================================
+https://keybase.io/jdrydn
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jdrydn.com
+  * I am jdrydn (https://keybase.io/jdrydn) on keybase.
+  * I have a public key ASAA7zfX7R6N4pdJFnxZX4ff-GhgoRhawwfaikF4hLwlFQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012000ef37d7ed1e8de29749167c595f87dff86860a1185ac307da8a417884bc25150a",
+            "host": "keybase.io",
+            "kid": "012000ef37d7ed1e8de29749167c595f87dff86860a1185ac307da8a417884bc25150a",
+            "uid": "65d2683b378080a3daf2c6f1f3148619",
+            "username": "jdrydn"
+        },
+        "service": {
+            "hostname": "jdrydn.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.23"
+    },
+    "ctime": 1495815323,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1495815306,
+        "hash": "1923c4bb523c48a2717e87adec9f66a8a42476e58056212b5200def87c402ece028733690d8e050567df6d7fda1f7cae3245afd9a159805ede40298167f506a3",
+        "seqno": 1116319
+    },
+    "prev": "3be99572d793fad17c8a0430bfca77d7d2112723cf8fa80ec8ebed6f7d7ad595",
+    "seqno": 15,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgAO831+0ejeKXSRZ8WV+H3/hoYKEYWsMH2opBeIS8JRUKp3BheWxvYWTFAvJ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMDBlZjM3ZDdlZDFlOGRlMjk3NDkxNjdjNTk1Zjg3ZGZmODY4NjBhMTE4NWFjMzA3ZGE4YTQxNzg4NGJjMjUxNTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDBlZjM3ZDdlZDFlOGRlMjk3NDkxNjdjNTk1Zjg3ZGZmODY4NjBhMTE4NWFjMzA3ZGE4YTQxNzg4NGJjMjUxNTBhIiwidWlkIjoiNjVkMjY4M2IzNzgwODBhM2RhZjJjNmYxZjMxNDg2MTkiLCJ1c2VybmFtZSI6ImpkcnlkbiJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiamRyeWRuLmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIzIn0sImN0aW1lIjoxNDk1ODE1MzIzLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTU4MTUzMDYsImhhc2giOiIxOTIzYzRiYjUyM2M0OGEyNzE3ZTg3YWRlYzlmNjZhOGE0MjQ3NmU1ODA1NjIxMmI1MjAwZGVmODdjNDAyZWNlMDI4NzMzNjkwZDhlMDUwNTY3ZGY2ZDdmZGExZjdjYWUzMjQ1YWZkOWExNTk4MDVlZGU0MDI5ODE2N2Y1MDZhMyIsInNlcW5vIjoxMTE2MzE5fSwicHJldiI6IjNiZTk5NTcyZDc5M2ZhZDE3YzhhMDQzMGJmY2E3N2Q3ZDIxMTI3MjNjZjhmYTgwZWM4ZWJlZDZmN2Q3YWQ1OTUiLCJzZXFubyI6MTUsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAsuzY2DfNvFc9i6GzDwHxoA9Qz/DNdSFHlJ2t6KDNmJrVGWq70yyQJvVD5ZuRDkfFRqOPjiL2DQWMm9r6ZwHWBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHcBQr105Clkvvv5Qb1BA+rSYAB6FaxuMgiueHIOe7nko3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jdrydn
+
+==================================================================
