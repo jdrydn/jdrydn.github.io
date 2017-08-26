@@ -1,17 +1,13 @@
 (function () {
-  var enableMailtoURLs = function () {
-    var els = document.querySelectorAll('a[href="#mailto:turn-on-javascript-to-find-my-email"]');
-    if (!els.length) return;
+  window.loadQueue = window.loadQueue || [];
 
-    Array.prototype.forEach.call(els, function (el) {
-      el.addEventListener('mouseover', function listener() {
-        el.removeEventListener('mouseover', listener);
-        el.setAttribute('href', window.atob('bWFpbHRvOmphbWVzQGpkcnlkbi5jb20='));
-      });
-    });
-  };
+  function init() {
+    for (var i = 0; i < window.loadQueue.length; i++) {
+      if (typeof window.loadQueue[i] === 'function') window.loadQueue[i].call();
+    }
+	  window.loadQueue.push = function(c) { c(); };
+  }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    enableMailtoURLs();
-  });
+  if (document.readyState !== 'loading') init();
+  else document.addEventListener('DOMContentLoaded', init);
 })();

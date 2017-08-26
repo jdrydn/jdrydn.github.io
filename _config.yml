@@ -1,2 +1,43 @@
-sass:
-  sass_dir: _sass
+logo: /img/favicons/favicon-96x96.png
+cover: /img/cover.jpeg
+
+title: jdrydn
+url: 'https://jdrydn.com'
+permalink: /posts/:title.html
+baseurl: ''
+
+google_analytics: UA-28506039-1
+
+description: |
+  *If I have to do something more than once I'm writing a script for it.*
+
+  **Engineer**, often found working on greenfield projects and/or microservices in
+  **NodeJS** (*ExpressJS*),
+  familiar with **relational databases** (*MySQL*, *Postgres*),
+  **document-driven databases** (*MongoDB*, *RethinkDB*, *Elasticsearch*),
+  **templating** (*Nunjucks*, *Handlebars*, *Jekyll*),
+  **unit testing** with code-coverage (*Mocha*, *Istanbul*),
+  **logging infrastructures** (*Fluentd*, *Kibana*),
+  as well as **dev-ops roles** (*dedicated servers*, *Docker*, *Amazon Web Services*).
+
+  Also experienced in **Bash**, **Git**, **HTML-CSS**, **Python** and **PHP**.
+
+  Currently working at [Car Throttle](https://www.carthrottle.com/) as their **Senior Software Engineer**.
+
+authors:
+  james:
+    name: James D
+    image: /img/author-james.jpg
+
+social:
+  - icon:	twitter
+    url:	https://twitter.com/jdrydn
+    desc: Follow me on twitter
+
+  - icon:	github
+    url:	https://github.com/jdrydn
+    desc:	Fork me on github
+
+# footer:
+#   - url: /about
+#     label: About

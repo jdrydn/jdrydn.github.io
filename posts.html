@@ -1,0 +1,17 @@
+---
+layout: page
+title: All Posts
+---
+{% for post in site.posts %}
+<article class="post">
+  <div class="article-item">
+    <header class="post-header">
+      <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    </header>
+    <section class="post-excerpt"><p><em>{{ post.excerpt | strip_html }}</em></p></section>
+    <div class="post-meta">
+      <a href="{{ post.url | relative_url }}"><time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time></a>
+    </div>
+  </div>
+</article>
+{% endfor %}
