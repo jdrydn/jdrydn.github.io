@@ -1,10 +1,12 @@
+baseurl: ''
+exclude: [ 'dev-docker.sh' ]
+permalink: /posts/:title.html
+
 logo: /img/favicons/favicon-96x96.png
 cover: /img/cover.jpeg
 
 title: jdrydn
 url: 'https://jdrydn.com'
-permalink: /posts/:title.html
-baseurl: ''
 
 google_analytics: UA-28506039-1
 
@@ -23,6 +25,12 @@ description: |
   Also experienced in **Bash**, **Git**, **HTML-CSS**, **Python** and **PHP**.
 
   Currently working at [Car Throttle](https://www.carthrottle.com/) as their **Senior Software Engineer**.
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      author: james
 
 authors:
   james:
