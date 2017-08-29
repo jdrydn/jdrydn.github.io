@@ -13,20 +13,16 @@ programmatically communicate with people.
 Awesome!  
 ... Well, nearly awesome.
 
-Most modules written for Node are built around instances, similar to:
-
 ```js
 var bot = new TelegramBot('my-awesome-token-here');
 
 bot.sendMessage('Hello, world!', callback);
 ```
+Most modules written for Node are built around instances, similar to the above. And, whilst this is fine for just one,
+or a couple of bots, it's not ideal for a service with many potential bots. And these solutions aren't very flexible
+when it comes to [the webhooks feature](https://core.telegram.org/bots/api#setwebhook) that Telegram bots work with.
 
-And, whilst this is fine for just one, or a couple of bots, it's not ideal for a service with many potential bots. And
-these solutions aren't very flexible when it comes to [the webhooks feature](https://core.telegram.org/bots/api#setwebhook)
-that Telegram bots work with.
-
-So instead, here is a simplified module to interact with Telegram & users with a focus on flexibility. You can use this
-with as many bots and as many webhooks as you like.
+So instead, here is a simplified module to interact with Telegram & users with a focus on flexibility.
 
 ```js
 var telegram = require('telegram-hero');
@@ -40,9 +36,7 @@ telegram.send({
   }
 }, callback);
 ```
-
-It’s built on top of the popular [`request`](github.com/request/request) module, to allow you to send attachments as
-streams:
+You can use this with as many bots and as many webhooks as you like.
 
 ```js
 telegram.send({
@@ -55,6 +49,8 @@ telegram.send({
   }
 }, callback);
 ```
+It’s built on top of the popular [`request`](github.com/request/request) module, to allow you to send attachments as
+streams, like above.
 
 This API doesn’t make any assumptions of your existing codebase, so if you require sending many messages to many users
 you’ll need to add [`async`]() or an equivalent control-flow library to assist you. Take care when using `Promise.all`
@@ -143,6 +139,8 @@ app.post(
 
 app.listen(3000);
 ```
+
+---
 
 And that’s it! This is in use in a personal project of mine, which sends me notifications from my online services via
 Telegram 💪

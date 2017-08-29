@@ -52,9 +52,6 @@ This makes Twitter an excellent source of content, and means any of my friends c
 
 Now, obviously I have some filters in place. Simple filters.
 
-First set of filters control the author of the tweets. I only wanted my friends to be able to add to this (not anybody
-in the world) so an array of their IDs and a simple check is in place.
-
 ```js
 stream.on('tweet', function (tweet) {
   var userid = tweet.user.id_str || null;
@@ -64,6 +61,8 @@ stream.on('tweet', function (tweet) {
   }
 });
 ```
+First set of filters control the author of the tweets. I only wanted my friends to be able to add to this (not anybody
+in the world) so an array of their IDs and a simple check is in place.
 
 ### Filters - Content
 
