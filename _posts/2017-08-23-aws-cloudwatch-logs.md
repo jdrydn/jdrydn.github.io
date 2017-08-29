@@ -227,8 +227,8 @@ existing `fluentd` instance and slowly start to move logs from ES to Cloudwatch 
 can be moved over anytime - they require a simple configuration change & deployment - but older services still using
 `fluentd` have higher volumes of traffic than these microservices, so I'll be migrating them slowly!
 
-Interesting thought whilst writing this: Elasticsearch isn't truly "*schema-less*". It is, in the sense that new
-properties can be added on the fly, but what they don't openly tell you is the type of every subsequent property has to
-be the same type, otherwise it just causes massive issues. Whereas Cloudwatch Logs are truly schema-less - it just
-depends on the query you're searching with. Key equals string? Search where that key is a string. Key is less than a
-number? Search where that key is a number.
+Interesting thought whilst writing this: Elasticsearch isn't truly "*schema-less*". It is, in the sense that
+[new properties can be added on the fly](https://www.elastic.co/blog/found-elasticsearch-mapping-introduction#when-to-specify-a-custom-mapping),
+but what they don't openly tell you is the type of every subsequent property has to be the same type, otherwise it just
+causes massive issues. Whereas Cloudwatch Logs are truly schema-less - it just depends on the query you're searching
+with. Key equals string? Search where that key is a string. Key is less than a number? Search where that key is a number.
