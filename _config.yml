@@ -1,5 +1,5 @@
 baseurl: ''
-exclude: [ 'dev-docker.sh' ]
+exclude: [ 'dev-docker.sh', 'feed.xml' ]
 permalink: /posts/:title.html
 
 logo: /img/favicons/favicon-96x96.png
