@@ -166,7 +166,9 @@ which realistically won't be known at runtime, so the custom filter will capture
 native events that `fluentd` prefers.
 
 ```sh
-$ docker run ... --log-driver=fluentd --log-opt fluentd-address=myfluentdhost:24224
+$ docker run ... \
+  --log-driver=fluentd \
+  --log-opt fluentd-address=myfluentdhost:24224
 ```
 Finally, update your container options (either via the ECS task definitions role or via the `docker` cli) to send the
 logs to the `fluentd` instance.
