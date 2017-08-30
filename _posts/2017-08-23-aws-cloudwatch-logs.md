@@ -1,23 +1,16 @@
 ---
 layout: post
 title: AWS Cloudwatch Logs
-published: false
 ---
 
 In a world dominated by containers & microservices over servers & monoliths, it's important to get your application
 logs sorted. Here's a brief overview of iterations of application log stacks in production-level applications at
 [Car Throttle](https://www.carthrottle.com/).
 
-So, since we're going to be discussing application logs, it'll help to visualise this. So here is how I setup an example
-[Yoem](https://npm.im/yoem) instance & the data that was generated when I ran a `GET` request to fetch embed data for
-[a YouTube video](https://www.youtube.com/watch?v=r-3NO8HRazc):
+So, since we're going to be discussing application logs, it'll help to visualise this. So here is an example HTTP
+request, response & application log when I ran a `GET` request to fetch embed data from a locally running
+[Yoem](https://npm.im/yoem) instance for [a YouTube video](https://www.youtube.com/watch?v=r-3NO8HRazc):
 
-```sh
-$ git clone https://github.com/jdrydn/yoem example-yoem
-$ cd example-yoem && npm install
-$ npm run dev # Server running on localhost:3010
-$ http GET http://localhost:3010/?url=https://www.youtube.com/watch?v=r-3NO8HRazc
-```
 ```http
 GET /?url=https://www.youtube.com/watch?v=r-3NO8HRazc HTTP/1.1
 Accept: */*
@@ -107,6 +100,8 @@ X-Response-Time: 425ms
 
 ## Application to Fluentd
 
+![Diagram of application sending to fluentd which sends to ES]({{ '/img/posts/2017-08-23-application-fluentd-es.jpg' | relative_url }})
+
 For the longest time at [Car Throttle](https://www.carthrottle.com/) we've used a combination of different technology
 to ship application logs. At first the main production stack used a combination of [`bunyan`](https://npm.im/bunyan) and
 monkey-patching the main functions to send log data to an always-running [`fluentd`](https://www.fluentd.org/) instance
@@ -124,6 +119,8 @@ occasionally being logst due to slightly differing ("malformed") data) which oft
 "*yellow*" state, which caused plenty of devops headaches.
 
 ## Docker to Fluentd
+
+![Diagram of docker sending to fluentd which sends to ES]({{ '/img/posts/2017-08-23-docker-fluent-es.jpg' | relative_url }})
 
 When we started deploying services with Docker, we noticed Docker supported fluentd
 [as a logging driver](https://docs.docker.com/engine/admin/logging/fluentd/), so suddenly our services don't need to use
@@ -179,6 +176,8 @@ know and love but also the same constraints as we know and love 🤦 This was a 
 from these new microservices but more was required.
 
 ## Docker to AWS Cloudwatch Logs
+
+![Diagram of docker sending to Cloudwatch]({{ '/img/posts/2017-08-23-docker-cloudwatch.jpg' | relative_url }})
 
 After a little digging into logging platforms I noticed a platform hiding right under my nose: **Cloudwatch Logs**.
 Having written autoscaling rules for [EC2 instances](https://aws.amazon.com/ec2) & [lambda scripts](https://aws.amazon.com/lambda)
