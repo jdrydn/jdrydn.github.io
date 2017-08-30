@@ -191,7 +191,10 @@ query search, but if data isn't found or a record doesn't match the type the que
 `false` and naturally isn't found by the query.
 
 ```sh
-$ docker run ... --log-driver=awslogs --log-opt awslogs-region=us-east-1 --log-opt awslogs-group=my-project/awesome-service
+$ docker run ... \
+  --log-driver=awslogs \
+  --log-opt awslogs-region=us-east-1 \
+  --log-opt awslogs-group=my-project/awesome-service
 ```
 The only configuration that's required for this is creating the log-group in Cloudwatch Logs, and then updating your
 container options to send logs via the `awslogs` driver. And that's literally it. Suddenly you have all log data going
