@@ -14,13 +14,19 @@ layout: default
 
     <section class="content" role="main">
       <div class="container featured">
+
         <article class="post">
           <div class="article-item">
             <section class="post-excerpt">{{ site.description | markdownify }}</section>
           </div>
         </article>
 
-        {% assign latest = site.posts[0] %}
+        {% for post in site.posts -%}
+        {%- unless post.homepage == false -%}
+        {%- assign latest = post -%}
+        {%- break -%}
+        {%- endunless -%}
+        {%- endfor -%}
         <article class="post">
           <div class="article-item">
             <header class="post-header">
