@@ -14,17 +14,16 @@ description: |
   *If I have to do something more than once I'm writing a script for it.*
 
   **Engineer**, often found working on greenfield projects and/or microservices in
-  **NodeJS** (*ExpressJS*) or **PHP**,
-  familiar with **relational databases** (*MySQL*, *Postgres*),
-  **document-driven databases** (*MongoDB*, *RethinkDB*, *Elasticsearch*),
-  **templating** (*Nunjucks*, *Handlebars*, *Jekyll*, *Liquid*),
-  **unit testing** with code-coverage (*Mocha*, *Istanbul*, *PHPUnit*),
-  **logging infrastructures** (*Fluentd*, *Kibana*),
-  as well as **dev-ops roles** (*dedicated servers*, *Docker*, *Amazon Web Services*).
-
-  Also experienced in **Bash**, **Git**, **HTML-CSS**, **Python** and **Java**.
+  **NodeJS** (*Koa, ~~ExpressJS~~*) ~~or **PHP**~~,
+  familiar with **relational databases** (*MySQL, Postgres*),
+  **document-driven databases** (*MongoDB, RethinkDB, Elasticsearch*),
+  **templating** (*Nunjucks, Handlebars, Jekyll, Liquid, ~~Jade~~ Pug*),
+  **unit testing** with code-coverage (*Mocha, Istanbul, ~~PHPUnit~~*),
+  **logging infrastructures** (*Fluentd, Kibana*),
+  as well as **dev-ops roles** (*dedicated servers, Docker, AWS*).
 
   Currently working at [Muzmatch](https://muzmatch.com/) as their **Senior Backend Developer**.
+  Formerly [Car Throttle](https://www.carthrottle.com) and [MyVoucherCodes](https://www.myvouchercodes.co.uk/).
 
 defaults:
   - scope:
