@@ -20,7 +20,7 @@ description: |
   **templating** (*Handlebars, ~~Nunjucks,~~ Jekyll, Liquid, ~~Jade~~ Pug*),
   **unit testing** with code-coverage (*Mocha, Istanbul, ~~PHPUnit~~*),
   **logging infrastructures** (*Fluentd, Kibana*),
-  as well as **dev-ops roles** (*dedicated servers, Docker, AWS*).
+  as well as **devops roles** (*dedicated servers, Docker, AWS*).
 
   Currently working as the **CTO** of 🚀[Real Links](https://www.reallinks.io/).
   Formerly 🎈[Muzmatch](https://muzmatch.com/),
