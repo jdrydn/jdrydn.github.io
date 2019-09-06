@@ -17,7 +17,10 @@ layout: default
 
         <article class="post">
           <div class="article-item">
-            <section class="post-excerpt">{{ site.description | markdownify }}</section>
+            <section class="post-excerpt">
+              {{ site.tagline | markdownify }}
+              {{ site.description | markdownify }}
+            </section>
           </div>
         </article>
 
