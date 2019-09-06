@@ -6,7 +6,8 @@ logo: /img/favicons/favicon-96x96.png
 cover: /img/cover.jpeg
 
 title: jdrydn
-tagline: *Don't be down, server. We all think you're doing a great job & everyone likes you!*
+tagline: |
+  *Don't be down, server. We all think you're doing a great job & everyone likes you!*
 url: 'https://jdrydn.com'
 
 google_analytics: UA-28506039-1
