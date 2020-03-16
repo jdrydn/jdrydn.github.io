@@ -1,51 +1,189 @@
 ---
-layout: default
+title: jdrydn
+image: /img/favicons/favicon-96x96.png
+
+header:
+  - href: https://twitter.com/jdrydn
+    text: Twitter
+  - href: https://github.com/jdrydn
+    text: GitHub
+  - href: https://linkedin.com/in/jdrydn
+    text: LinkedIn
+
+tagline: >
+  **Engineer** at heart, often found working on projects and/or microservices in
+  **NodeJS** (*ExpressJS, Serverless, ~~Koa~~*) ~~or **PHP** (*Symphony*)~~,
+  familiar with **relational databases** (*MySQL, Postgres*),
+  **document-driven databases** (*MongoDB, ~~RethinkDB,~~ Elasticsearch*),
+  **templating** (*Handlebars, ~~Nunjucks,~~ Jekyll, Liquid, ~~Jade~~ Pug*),
+  **unit testing** with code-coverage (*Mocha, Istanbul, ~~PHPUnit~~*),
+  **logging infrastructures** (*Fluentd, Kibana*),
+  as well as **devops roles** (*dedicated servers, Docker, AWS*).
+
+links:
+  - href: https://medium.com/@jdrydn
+    icon: fa-medium
+    text: medium.com/@jdrydn
+  - href: https://reallinks.dev
+    icon: fa-rss
+    text: reallinks.dev
+
+footer:
+  - href: https://facebook.com/jdrydn
+    icon: fa-facebook
+  - href: https://www.youtube.com/channel/UCaiHGzraNoi-ZwCci8QsQEg
+    icon: fa-youtube
+  - href: https://twitter.com/jdrydn
+    icon: fa-twitter
+  - href: https://github.com/jdrydn
+    icon: fa-github
+  - href: https://stackoverflow.com/users/5291686/jdrydn
+    icon: fa-stack-overflow
+  - href: https://linkedin.com/in/jdrydn
+    icon: fa-linkedin
+  - href: https://www.instagram.com/jdrydn93
+    icon: fa-instagram
+  - href: http://reddit.com/u/jdrydn
+    icon: fa-reddit
+  - href: https://medium.com/@jdrydn
+    icon: fa-medium
+  - href: mailto:james&#064;jdrydn&#046;com
+    icon: fa-envelope
 ---
-<div class="page-content">
-  <div class="wrapper">
-    <div class="teaserimage">
-      <div class="teaserimage-image" style="background-image: url({{ site.cover | relative_url }})"></div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+
+    <meta property="og:site_name" content="{{ page.title }}"/>
+    <title>{{ page.title }}</title>
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta name="twitter:title" content="{{ page.title }}"/>
+
+    {%- if page.tagline -%}
+    <meta name="description" content="{{ page.tagline | markdownify | strip_html | strip_newlines }}"/>
+    <meta property="og:description" content="{{ page.tagline | markdownify | strip_html | strip_newlines }}"/>
+    <meta name="twitter:description" content="{{ page.tagline | markdownify | strip_html | strip_newlines }}"/>
+    {%- endif %}
+
+    {% if page.image -%}
+    <meta property="og:image" content="{{ page.image | absolute_url }}"/>
+    <meta name="twitter:image" content="{{ page.image | absolute_url }}"/>
+    {%- endif %}
+
+    <meta name="twitter:card" content="summary"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}"/>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ '/img/favicons/apple-icon-57x57.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ '/img/favicons/apple-icon-60x60.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ '/img/favicons/apple-icon-72x72.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ '/img/favicons/apple-icon-76x76.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ '/img/favicons/apple-icon-114x114.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ '/img/favicons/apple-icon-120x120.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ '/img/favicons/apple-icon-144x144.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ '/img/favicons/apple-icon-152x152.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/favicons/apple-icon-180x180.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ '/img/favicons/android-icon-192x192.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicons/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/img/favicons/favicon-96x96.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicons/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/img/favicons/manifest.json' | relative_url }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ '/img/favicons/ms-icon-144x144.png' | relative_url }}">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/css/style.css' | relative_url }}"/>
+  </head>
+  <body>
+    <div class="page px-5 ml-0 ml-sm-5">
+
+      <header class="my-5">
+        <a class="d-flex flex-row justify-content-start align-items-center text-dark text-decoration-none mb-3" href="{{ '/' | relative_url }}">
+          <img class="rounded mr-3" height="40px" width="40px" src="{{ '/img/avatar.png' | relative_url }}"/>
+          <h1>{{ page.title }}</h1>
+        </a>
+        {%- if page.header -%}
+        <nav class="d-flex flex-row justify-content-start align-items-center w-100">
+          {%- for link in page.header -%}
+          {%- if link.href -%}
+          <a class="text-dark text-decoration-none text-lowercase mr-3" href="{{ link.href | relative_url }}" {% if link.title %}title="{{ link.title }}"{% endif %}>
+            {%- if link.icon -%}
+            <i class="fa {{ link.icon }}" aria-hidden="true"></i>
+            {%- endif -%}
+            {%- if link.text -%}
+            {{ link.text }}
+            {%- endif -%}
+          </a>
+          {%- endif -%}
+          {%- endfor -%}
+        </nav>
+        {%- endif -%}
+      </header>
+
+      {%- if page.tagline -%}
+      <section class="my-5 mkdwn">
+        {{ page.tagline | markdownify }}
+      </section>
+      {%- endif -%}
+
+      <section class="my-5 mkdwn">
+        <p>Currently <strong>CTO</strong> of 🚀 <a href="https://reallinks.io">Real Links</a>. Formerly:</p>
+        <ul class="list-unstyled ml-2">
+          <li>
+            <div class="d-inline-block w-20 mr-2">🎈</div>
+            <a class="text-dark" href="https://muzmatch.com">muzmatch</a>
+          </li>
+          <li>
+            <div class="d-inline-block w-20 mr-2">🏎</div>
+            <a class="text-dark" href="https://www.carthrottle.com/">Car Throttle</a> /
+            <a class="text-dark" href="https://wtf1.com/">WTF1</a>
+          </li>
+          <li>
+            <div class="d-inline-block w-20 mr-2">🏷</div>
+            <a class="text-dark" href="https://www.myvouchercodes.co.uk/">My Voucher Codes</a>
+          </li>
+        </ul>
+      </section>
+
+      {% if page.links %}
+      <section class="my-5 mkdwn">
+        <p>More things to read:</p>
+        <ul class="list-unstyled ml-2">
+          {% for link in page.links -%}
+          <li>
+            <a class="text-dark text-lowercase" href="{{ link.href | relative_url }}" {% if link.title %}title="{{ link.title }}"{% endif %}>
+              <div class="d-inline-block w-20 mr-2">{%- if link.icon -%}<i class="fa {{ link.icon }}" aria-hidden="true"></i>{%- endif -%}</div>
+              {%- if link.text -%}
+              {{ link.text }}
+              {%- endif -%}
+            </a>
+          </li>
+          {%- endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {%- if page.footer -%}
+      <footer class="my-5 d-flex flex-row justify-content-center align-items-center">
+        {% for link in page.footer -%}
+        {%- if link.href and link.icon -%}
+        <a class="text-dark text-decoration-none text-lowercase mr-3" href="{{ link.href | relative_url }}" {% if link.title %}title="{{ link.title }}"{% endif %}>
+          {%- if link.icon -%}
+          <i class="fa {{ link.icon }}" aria-hidden="true"></i>
+          {%- endif -%}
+        </a>
+        {%- endif -%}
+        {%- endfor %}
+      </footer>
+      {%- endif -%}
+
     </div>
-
-    <header class="blog-header">
-      <div class="blog-logo" style="background-image: url('{{ site.authors.james.image | relative_url }}')">jdrydn</div>
-      <h1 class="blog-title">James D</h1>
-    </header>
-
-    <section class="content" role="main">
-      <div class="container featured">
-
-        <article class="post">
-          <div class="article-item">
-            <section class="post-excerpt">
-              {{ site.tagline | markdownify }}
-              {{ site.description | markdownify }}
-            </section>
-          </div>
-        </article>
-
-        {% for post in site.posts -%}
-        {%- unless post.homepage == false -%}
-        {%- assign latest = post -%}
-        {%- break -%}
-        {%- endunless -%}
-        {%- endfor -%}
-        <article class="post">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title"><a href="{{ latest.url | relative_url }}">{{ latest.title }}</a></h2>
-            </header>
-            <section class="post-excerpt"><p><em>{{ latest.excerpt | strip_html }}</em></p></section>
-            <div class="post-meta">
-              <a href="{{ latest.url | relative_url }}">Read more &raquo;</a>
-            </div>
-          </div>
-        </article>
-
-        <div class="post-meta">
-          <a href="{{ '/posts.html' | relative_url }}">All Posts</a>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
+    <script type="text/javascript" src="{{ '/js/script.js' | relative_url }}"></script>
+  </body>
+</html>
