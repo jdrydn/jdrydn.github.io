@@ -1,0 +1,23 @@
+.page {
+  max-width: 30rem;
+}
+
+header {
+  a {
+    color: inherit !important;
+  }
+}
+
+.w-20 {
+  width: 20px;
+}
+
+.mkdwn {
+  a {
+    color: inherit !important;
+    text-decoration: underline;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
