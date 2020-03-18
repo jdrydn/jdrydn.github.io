@@ -19,6 +19,16 @@ tagline: >
   **logging infrastructures** (*Fluentd, Kibana*),
   as well as **devops roles** (*dedicated servers, Docker, AWS*).
 
+employment:
+  - emoji: '🚀'
+    text: '[Real Links](https://reallinks.io)'
+  - emoji: '🎈'
+    text: '[muzmatch](https://muzmatch.com)'
+  - emoji: '🏎'
+    text: '[Car Throttle](https://www.carthrottle.com/) / [WTF1](https://wtf1.com/)'
+  - emoji: '🏷'
+    text: '[My Voucher Codes](https://www.myvouchercodes.co.uk)'
+
 links:
   - href: https://medium.com/@jdrydn
     icon: fa-medium
@@ -131,24 +141,20 @@ footer:
       </section>
       {%- endif -%}
 
+      {%- if page.employment -%}
       <section class="my-5 mkdwn">
-        <p>Currently <strong>CTO</strong> of 🚀 <a href="https://reallinks.io">Real Links</a>. Formerly:</p>
-        <ul class="list-unstyled ml-2">
+        {%- assign latest = page.employment | first -%}
+        <p>Currently <strong>CTO</strong> of {{ latest.emoji }} {{ latest.text | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}. Formerly:</p>
+        <ul class="list-unstyled text-dark ml-2">
+          {%- for history in page.employment offset:1 -%}
           <li>
-            <div class="d-inline-block w-20 mr-2">🎈</div>
-            <a class="text-dark" href="https://muzmatch.com">muzmatch</a>
+            <div class="d-inline-block w-20 mr-2">{{ history.emoji }}</div>
+            {{ history.text | markdownify | remove: '<p>' | remove: '</p>' }}
           </li>
-          <li>
-            <div class="d-inline-block w-20 mr-2">🏎</div>
-            <a class="text-dark" href="https://www.carthrottle.com/">Car Throttle</a> /
-            <a class="text-dark" href="https://wtf1.com/">WTF1</a>
-          </li>
-          <li>
-            <div class="d-inline-block w-20 mr-2">🏷</div>
-            <a class="text-dark" href="https://www.myvouchercodes.co.uk/">My Voucher Codes</a>
-          </li>
+          {%- endfor -%}
         </ul>
       </section>
+      {%- endif -%}
 
       {% if page.links %}
       <section class="my-5 mkdwn">
