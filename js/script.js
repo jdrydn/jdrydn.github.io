@@ -1,5 +1,18 @@
+(function (d, scripts) {
+  for (var id in scripts) if (d.getElementById(id) === null) {
+    var js = d.createElement('script'); js.id = id; js.src = scripts[id];
+    d.head.appendChild(js);
+  }
+}(document, {
+  embedly: 'https://cdn.embedly.com/widgets/platform.js',
+  twitter: 'https://platform.twitter.com/widgets.js',
+}));
+
 (function () {
   window.loadQueue = window.loadQueue || [];
+  window.embedly = window.embedly || function () {
+    (window.embedly.q = window.embedly.q || []).push(arguments);
+  };
 
   function eachElement(els, eachFn) {
     if (els.length) {
@@ -10,7 +23,7 @@
   }
 
   window.loadQueue.push(function externalLinks() {
-    eachElement(document.getElementsByTagName('a'), function (el) {
+    eachElement(document.querySelectorAll('.e-content a[href]'), function (el) {
       if (el.getAttribute('href') && el.hostname !== window.location.hostname) {
         el.target = '_blank';
         // console.log('Settings', el);
@@ -18,6 +31,16 @@
         // console.log('Skipping', el);
       }
     });
+  });
+
+  window.embedly('defaults', {
+    cards: {
+      override: true,
+      // key: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+      chrome: 0,
+      controls: 0,
+      recommend: 0,
+    },
   });
 
   function triggerLoadQueue() {

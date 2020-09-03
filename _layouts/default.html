@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+
+    {% assign page_title = "" %}
+    {% if page.draft %}{% assign page_title = page_title | prepend: "[DRAFT] " %}{% endif %}
+    {% if page.title %}
+      {% assign page_title = page_title | append: site.title | append: " | " | append: page.title %}
+    {% else %}
+      {% assign page_title = site.title %}
+    {% endif %}
+
+    <meta property="og:site_name" content="{{ page_title }}"/>
+    <title>{{ page_title }}</title>
+    <meta property="og:title" content="{{ page_title }}"/>
+    <meta name="twitter:title" content="{{ page_title }}"/>
+
+    {%- if page.description -%}
+    <meta name="description" content="{{ page.description | markdownify | strip_html | strip_newlines }}"/>
+    <meta property="og:description" content="{{ page.description | markdownify | strip_html | strip_newlines }}"/>
+    <meta name="twitter:description" content="{{ page.description | markdownify | strip_html | strip_newlines }}"/>
+    {%- endif %}
+
+    {% if page.image -%}
+    <meta property="og:image" content="{{ page.image | absolute_url }}"/>
+    <meta name="twitter:image" content="{{ page.image | absolute_url }}"/>
+    {%- endif %}
+
+    <meta name="twitter:card" content="summary"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}"/>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ '/img/favicons/apple-icon-57x57.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ '/img/favicons/apple-icon-60x60.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ '/img/favicons/apple-icon-72x72.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ '/img/favicons/apple-icon-76x76.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ '/img/favicons/apple-icon-114x114.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ '/img/favicons/apple-icon-120x120.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ '/img/favicons/apple-icon-144x144.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ '/img/favicons/apple-icon-152x152.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/favicons/apple-icon-180x180.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ '/img/favicons/android-icon-192x192.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicons/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/img/favicons/favicon-96x96.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicons/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/img/favicons/manifest.json' | relative_url }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ '/img/favicons/ms-icon-144x144.png' | relative_url }}">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/css/style.css' | relative_url }}"/>
+  </head>
+  <body>
+    {{ content }}
+    <script type="text/javascript" src="{{ '/js/script.js' | relative_url }}"></script>
+  </body>
+</html>

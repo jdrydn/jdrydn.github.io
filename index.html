@@ -1,16 +1,5 @@
 ---
-title: jdrydn
-image: /img/favicons/favicon-96x96.png
-
-header:
-  - href: https://twitter.com/jdrydn
-    text: Twitter
-  - href: https://github.com/jdrydn
-    text: GitHub
-  - href: https://linkedin.com/in/jdrydn
-    text: LinkedIn
-
-tagline: >
+description: >
   **Engineer** at heart, often found working on projects in **JavaScript** (*Node.js, Vue.js*)
   ~~or **PHP** (*Symphony*)~~, familiar with **relational databases** (*MySQL, Postgres*),
   **document-driven databases** (*MongoDB, ~~RethinkDB,~~ Elasticsearch*),
@@ -29,13 +18,6 @@ employment:
   - emoji: '🏷'
     text: '[My Voucher Codes](https://www.myvouchercodes.co.uk)'
 
-links:
-  - href: https://jdrydn.writeas.com/
-    text: jdrydn.writeas.com
-  #- href: https://reallinks.dev
-  #  icon: fa-rss
-  #  text: reallinks.dev
-
 footer:
   - href: https://facebook.com/jdrydn
     icon: fa-facebook
@@ -49,145 +31,85 @@ footer:
     icon: fa-stack-overflow
   - href: https://linkedin.com/in/jdrydn
     icon: fa-linkedin
-  - href: https://www.instagram.com/jdrydn93
-    icon: fa-instagram
   - href: http://reddit.com/u/jdrydn
     icon: fa-reddit
-  - href: https://medium.com/@jdrydn
-    icon: fa-medium
   - href: mailto:james&#064;jdrydn&#046;com
     icon: fa-envelope
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="HandheldFriendly" content="True"/>
-    <meta name="MobileOptimized" content="320"/>
+<div class="page px-5 ml-0 ml-sm-5">
 
-    <meta property="og:site_name" content="{{ page.title }}"/>
-    <title>{{ page.title }}</title>
-    <meta property="og:title" content="{{ page.title }}"/>
-    <meta name="twitter:title" content="{{ page.title }}"/>
-
-    {%- if page.tagline -%}
-    <meta name="description" content="{{ page.tagline | markdownify | strip_html | strip_newlines }}"/>
-    <meta property="og:description" content="{{ page.tagline | markdownify | strip_html | strip_newlines }}"/>
-    <meta name="twitter:description" content="{{ page.tagline | markdownify | strip_html | strip_newlines }}"/>
-    {%- endif %}
-
-    {% if page.image -%}
-    <meta property="og:image" content="{{ page.image | absolute_url }}"/>
-    <meta name="twitter:image" content="{{ page.image | absolute_url }}"/>
-    {%- endif %}
-
-    <meta name="twitter:card" content="summary"/>
-    <meta property="og:type" content="blog"/>
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}"/>
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}"/>
-
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ '/img/favicons/apple-icon-57x57.png' | relative_url }}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ '/img/favicons/apple-icon-60x60.png' | relative_url }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ '/img/favicons/apple-icon-72x72.png' | relative_url }}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ '/img/favicons/apple-icon-76x76.png' | relative_url }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ '/img/favicons/apple-icon-114x114.png' | relative_url }}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ '/img/favicons/apple-icon-120x120.png' | relative_url }}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ '/img/favicons/apple-icon-144x144.png' | relative_url }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ '/img/favicons/apple-icon-152x152.png' | relative_url }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/favicons/apple-icon-180x180.png' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{ '/img/favicons/android-icon-192x192.png' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicons/favicon-32x32.png' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/img/favicons/favicon-96x96.png' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicons/favicon-16x16.png' | relative_url }}">
-    <link rel="manifest" href="{{ '/img/favicons/manifest.json' | relative_url }}">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{ '/img/favicons/ms-icon-144x144.png' | relative_url }}">
-    <meta name="theme-color" content="#ffffff">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/css/style.css' | relative_url }}"/>
-  </head>
-  <body>
-    <div class="page px-5 ml-0 ml-sm-5">
-
-      <header class="my-5">
-        <a class="d-flex flex-row justify-content-start align-items-center text-dark text-decoration-none mb-3" href="{{ '/' | relative_url }}">
-          <img class="rounded mr-3" height="40px" width="40px" src="{{ '/img/avatar.png' | relative_url }}"/>
-          <h1>{{ page.title }}</h1>
-        </a>
-        {%- if page.header -%}
-        <nav class="d-flex flex-row justify-content-start align-items-center w-100">
-          {%- for link in page.header -%}
-          {%- if link.href -%}
-          <a class="text-dark text-decoration-none text-lowercase mr-3" href="{{ link.href | relative_url }}" {% if link.title %}title="{{ link.title }}"{% endif %}>
-            {%- if link.icon -%}
-            <i class="fa {{ link.icon }}" aria-hidden="true"></i>
-            {%- endif -%}
-            {%- if link.text -%}
-            {{ link.text }}
-            {%- endif -%}
-          </a>
-          {%- endif -%}
-          {%- endfor -%}
-        </nav>
+  <header class="my-5">
+    <a class="d-flex flex-row justify-content-start align-items-center text-dark text-decoration-none mb-3" href="{{ '/' | relative_url }}">
+      <img class="rounded mr-3" height="40px" width="40px" src="{{ site.header.image | relative_url }}"/>
+      <h1>{{ site.header.title }}</h1>
+    </a>
+    {%- if site.header.links -%}
+    <nav class="d-flex flex-row justify-content-start align-items-center w-100">
+      {%- for link in site.header -%}
+      {%- if link.href -%}
+      <a class="text-dark text-decoration-none text-lowercase mr-3" href="{{ link.href | relative_url }}" {% if link.title %}title="{{ link.title }}"{% endif %}>
+        {%- if link.icon -%}
+        <i class="fa {{ link.icon }}" aria-hidden="true"></i>
         {%- endif -%}
-      </header>
-
-      {%- if page.tagline -%}
-      <section class="my-5 mkdwn">
-        {{ page.tagline | markdownify }}
-      </section>
-      {%- endif -%}
-
-      {%- if page.employment -%}
-      <section class="my-5 mkdwn">
-        {%- assign latest = page.employment | first -%}
-        <p>Currently <strong>CTO</strong> of {{ latest.emoji }} {{ latest.text | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}. Formerly:</p>
-        <ul class="list-unstyled text-dark ml-2">
-          {%- for history in page.employment offset:1 -%}
-          <li>
-            <div class="d-inline-block w-20 mr-2">{{ history.emoji }}</div>
-            {{ history.text | markdownify | remove: '<p>' | remove: '</p>' }}
-          </li>
-          {%- endfor -%}
-        </ul>
-      </section>
-      {%- endif -%}
-
-      {% if page.links %}
-      <section class="my-5 mkdwn">
-        <p>More things to read:</p>
-        <ul class="list-unstyled ml-2">
-          {% for link in page.links -%}
-          <li>
-            <a class="text-dark text-lowercase" href="{{ link.href | relative_url }}" {% if link.title %}title="{{ link.title }}"{% endif %}>
-              <div class="d-inline-block w-20 mr-2">{%- if link.icon -%}<i class="fa {{ link.icon }}" aria-hidden="true"></i>{%- endif -%}</div>
-              {%- if link.text -%}
-              {{ link.text }}
-              {%- endif -%}
-            </a>
-          </li>
-          {%- endfor %}
-        </ul>
-      </section>
-      {% endif %}
-
-      {%- if page.footer -%}
-      <footer class="my-5 d-flex flex-row justify-content-center align-items-center">
-        {% for link in page.footer -%}
-        {%- if link.href and link.icon -%}
-        <a class="text-dark text-decoration-none text-lowercase mr-3" href="{{ link.href | relative_url }}" {% if link.title %}title="{{ link.title }}"{% endif %}>
-          {%- if link.icon -%}
-          <i class="fa {{ link.icon }}" aria-hidden="true"></i>
-          {%- endif -%}
-        </a>
+        {%- if link.text -%}
+        {{ link.text }}
         {%- endif -%}
-        {%- endfor %}
-      </footer>
+      </a>
       {%- endif -%}
+      {%- endfor -%}
+    </nav>
+    {%- endif -%}
+  </header>
 
-    </div>
-    <script type="text/javascript" src="{{ '/js/script.js' | relative_url }}"></script>
-  </body>
-</html>
+  {%- if page.tagline -%}
+  <section class="my-5 mkdwn">
+    {{ page.tagline | markdownify }}
+  </section>
+  {%- endif -%}
+
+  {%- if page.employment -%}
+  <section class="my-5 mkdwn">
+    {%- assign latest = page.employment | first -%}
+    <p>Currently <strong>CTO</strong> of {{ latest.emoji }} {{ latest.text | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}. Formerly:</p>
+    <ul class="list-unstyled text-dark ml-0 ml-sm-3">
+      {%- for history in page.employment offset:1 -%}
+      <li>
+        <div class="d-inline-block w-20 mr-2">{{ history.emoji }}</div>
+        {{ history.text | markdownify | remove: '<p>' | remove: '</p>' }}
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+  {%- endif -%}
+
+  {% if site.posts %}
+  <section class="my-5 mkdwn">
+    <p>More things to read:</p>
+    <ul class="list-unstyled ml-0 ml-sm-5">
+      {% for post in site.posts limit:5 %}
+      <li class="mb-2">
+        <a class="text-dark" href="{{ post.url | relative_url }}" {% if post.title %}title="{{ post.title }}"{% endif %}>
+          {{ post.title | default: post.id }}
+        </a>
+      </li>
+      {%- endfor %}
+      <li><a class="text-dark" href="{{ '/blog.html' | relative_url }}" title="All posts">All posts</a></li>
+    </ul>
+  </section>
+  {% endif %}
+
+  {%- if page.footer -%}
+  <footer class="my-5 d-flex flex-row justify-content-center justify-content-sm-start align-items-center">
+    {% for link in page.footer -%}
+    {%- if link.href and link.icon -%}
+    <a class="text-dark text-decoration-none text-lowercase mr-3" href="{{ link.href | relative_url }}" {% if link.title %}title="{{ link.title }}"{% endif %}>
+      {%- if link.icon -%}
+      <i class="fa {{ link.icon }}" aria-hidden="true"></i>
+      {%- endif -%}
+    </a>
+    {%- endif -%}
+    {%- endfor %}
+  </footer>
+  {%- endif -%}
+
+</div>

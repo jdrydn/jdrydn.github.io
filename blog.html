@@ -1,0 +1,50 @@
+---
+description: >
+  **Engineer** at heart, often found working on projects in **JavaScript** (*Node.js, Vue.js*)
+  ~~or **PHP** (*Symphony*)~~, familiar with **relational databases** (*MySQL, Postgres*),
+  **document-driven databases** (*MongoDB, ~~RethinkDB,~~ Elasticsearch*),
+  **templating** (*Handlebars, ~~Nunjucks,~~ Jekyll, Liquid, ~~Jade~~ Pug*),
+  **unit testing** with code-coverage (*Mocha, Istanbul, ~~PHPUnit~~*),
+  **logging infrastructures** (*Fluentd, Kibana*),
+  as well as **devops roles** (*dedicated servers, Docker, AWS*).
+---
+<div class="page px-5 ml-0 ml-sm-5">
+
+  <header class="my-5">
+    <a class="d-flex flex-row justify-content-start align-items-center text-dark text-decoration-none mb-3" href="{{ '/' | relative_url }}">
+      <img class="rounded mr-3" height="40px" width="40px" src="{{ site.header.image | relative_url }}"/>
+      <h1>{{ site.header.title }}</h1>
+    </a>
+    {%- if site.header.links -%}
+    <nav class="d-flex flex-row justify-content-start align-items-center w-100">
+      {%- for link in site.header -%}
+      {%- if link.href -%}
+      <a class="text-dark text-decoration-none text-lowercase mr-3" href="{{ link.href | relative_url }}" {% if link.title %}title="{{ link.title }}"{% endif %}>
+        {%- if link.icon -%}
+        <i class="fa {{ link.icon }}" aria-hidden="true"></i>
+        {%- endif -%}
+        {%- if link.text -%}
+        {{ link.text }}
+        {%- endif -%}
+      </a>
+      {%- endif -%}
+      {%- endfor -%}
+    </nav>
+    {%- endif -%}
+  </header>
+
+  {% if site.posts %}
+  <section class="my-5 mkdwn">
+    <ul class="list-unstyled ml-0 ml-sm-5">
+      {% for post in site.posts %}
+      <li class="mb-2">
+        <a class="text-dark" href="{{ post.url | relative_url }}" {% if post.title %}title="{{ post.title }}"{% endif %}>
+          {{ post.title | default: post.id }}
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+</div>
