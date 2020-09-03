@@ -4,4 +4,7 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  description: Set your post title
+  config:
+    required: true
