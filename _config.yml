@@ -1,7 +1,6 @@
 permalink: /posts/:title.html
 timezone: Europe/London
 exclude:
-  - .forestry/
   - README.md
 defaults:
   - scope:

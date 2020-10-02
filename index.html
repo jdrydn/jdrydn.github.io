@@ -84,17 +84,7 @@ footer:
 
   {% if site.posts %}
   <section class="my-5 mkdwn">
-    <p>More things to read:</p>
-    <ul class="list-unstyled ml-0 ml-sm-5">
-      {% for post in site.posts limit:5 %}
-      <li class="mb-2">
-        <a class="text-dark" href="{{ post.url | relative_url }}" {% if post.title %}title="{{ post.title }}"{% endif %}>
-          {{ post.title | default: post.id }}
-        </a>
-      </li>
-      {%- endfor %}
-      <li><a class="text-dark" href="{{ '/blog.html' | relative_url }}" title="All posts">All posts</a></li>
-    </ul>
+    <a class="twitter-timeline" href="https://twitter.com/jdrydn">Tweets by jdrydn</a>
   </section>
   {% endif %}
 
@@ -111,5 +101,6 @@ footer:
     {%- endfor %}
   </footer>
   {%- endif -%}
-
 </div>
+
+<script async src="https://platform.twitter.com/widgets.js"></script>
