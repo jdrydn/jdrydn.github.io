@@ -9,8 +9,8 @@
 }));
 
 (function () {
-  window.loadQueue = window.loadQueue || [];
-  window.embedly = window.embedly || function () {
+  window.loadQueue = Array.isArray(window.loadQueue) ? window.loadQueue : [];
+  window.embedly = typeof window.embedly === 'function' ? window.embedly : function () {
     (window.embedly.q = window.embedly.q || []).push(arguments);
   };
 

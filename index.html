@@ -85,7 +85,7 @@ footer:
   <section class="my-5">
     <div id="twitter-timeline"></div>
     <script type="text/javascript">
-      window.loadQueue = (window.loadQueue || []).concat(function twitterTimeline() {
+      window.loadQueue = (Array.isArray(window.loadQueue) ? window.loadQueue : []).concat(function twitterTimeline() {
         twttr.widgets.createTimeline({
           sourceType: 'profile',
           screenName: 'jdrydn'
