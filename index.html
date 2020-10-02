@@ -82,11 +82,17 @@ footer:
   </section>
   {%- endif -%}
 
-  {% if site.posts %}
-  <section class="my-5 mkdwn">
-    <a class="twitter-timeline" href="https://twitter.com/jdrydn">Tweets by jdrydn</a>
+  <section class="my-5">
+    <div id="twitter-timeline"></div>
+    <script type="text/javascript">
+      window.loadQueue = (window.loadQueue || []).concat(function twitterTimeline() {
+        twttr.widgets.createTimeline({
+          sourceType: 'profile',
+          screenName: 'jdrydn'
+        }, document.getElementById('twitter-timeline'));
+      });
+    </script>
   </section>
-  {% endif %}
 
   {%- if page.footer -%}
   <footer class="my-5 d-flex flex-row justify-content-center justify-content-sm-start align-items-center">
@@ -103,4 +109,4 @@ footer:
   {%- endif -%}
 </div>
 
-<script async src="https://platform.twitter.com/widgets.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
