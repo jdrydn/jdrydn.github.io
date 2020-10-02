@@ -65,7 +65,7 @@
 
       (function (d, scripts) {
         for (var id in scripts) if (d.getElementById(id) === null) {
-          var js = d.createElement('script'); js.async = true; js.id = id; js.src = scripts[id];
+          var js = d.createElement('script'); js.id = id; js.src = scripts[id];
           d.head.appendChild(js);
         }
       }(document, {
